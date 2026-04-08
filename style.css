@@ -1,0 +1,55 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+      
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .modulo{
+            height: 100vh;
+            background: url('https://photo.nelcilento.com/1280/piatti_tipici_del_cilento_241105_01_1280.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .modulo h1 {
+            font-size: 3rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        
+        .card img {
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card {
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        
+        section {
+            padding: 60px 0;
+        }
