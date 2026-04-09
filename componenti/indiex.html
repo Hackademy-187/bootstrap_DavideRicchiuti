@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Cucina Cilentana</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cucina Cilentana</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ricette">Ricette</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="modulo">
+        <div>
+            <h1>Benvenuto nel Blog della Cucina Cilentana</h1>
+            <button class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#infoModal">Scopri di più</button>
+        </div>
+    </header>
+
+    <div id="carouselExample" class="carousel slide container mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://blog.giallozafferano.it/cuordinutella/wp-content/uploads/2015/07/DSC04760.jpg"
+                    class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://blog.giallozafferano.it/cuordinutella/wp-content/uploads/2016/01/DSC05306-1.jpg"
+                    class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://blog.giallozafferano.it/cuordinutella/wp-content/uploads/2015/07/DSC04798.jpg"
+                    class="d-block w-100" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section id="ricette" class="mt-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Ricette Tipiche</h2>
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://blog.giallozafferano.it/cuordinutella/wp-content/uploads/2015/07/DSC04760-300x225.jpg"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Calamaro 'mbuttunato</h5>
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modal1">Leggi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://blog.giallozafferano.it/cuordinutella/wp-content/uploads/2016/01/DSC05306-1-320x240.jpg"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Ragù Cilentano</h5>
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modal2">Leggi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://blog.giallozafferano.it/cuordinutella/wp-content/uploads/2015/07/DSC04798.jpg"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Parmigiana</h5>
+
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modal3">Leggi</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="container mt-5">
+        <h2 class="text-center mb-4">Domande Frequenti</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Cos'è la cucina cilentana?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">È una cucina tradizionale della Campania.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Qual è il piatto tipico?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">Il ragù cilentano è uno dei più famosi.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Calamaro</h5>
+                </div>
+                <div class="modal-body">Ricetta tradizionale di mare.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Ragù</h5>
+                </div>
+                <div class="modal-body">Ricco e saporito.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Parmigiana</h5>
+                </div>
+                <div class="modal-body">Piatto unico sostanzioso.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <p>© 2026 Blog Cucina Cilentana</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+body {
+            padding-top: 70px;
+        }
+
+        .modulo {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: white;
+            text-align: center;
+        }
